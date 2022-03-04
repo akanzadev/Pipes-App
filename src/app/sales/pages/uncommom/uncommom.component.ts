@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-uncommom',
@@ -43,4 +44,32 @@ export class UncommomComponent {
     age: 36,
     address: 'Av La Unión Lima Perú',
   };
+
+  // JSON Pipe
+  heroes = [
+    {
+      name: 'Superman',
+      age: 36,
+      fly: true,
+    },
+    {
+      name: 'Batman',
+      age: 36,
+      fly: false,
+    },
+    {
+      name: 'Flash',
+      age: 36,
+      fly: true,
+    },
+  ];
+
+  // Async Pipe
+  myObservable = interval(1000);
+
+  valuePromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Fin de la promesa');
+    }, 2000);
+  });
 }

@@ -29,16 +29,17 @@ export class MenuComponent implements OnInit {
             icon: 'pi pi-fw pi-globe',
             routerLink: '/uncommom',
           },
-          {
+          /*   {
             label: 'Order',
             icon: 'pi pi-fw pi-calendar',
             routerLink: '/order',
-          },
+          }, */
         ],
       },
       {
         label: 'Pipes Personalized',
         icon: 'pi pi-fw pi-cog',
+        routerLink: '/order',
       },
       /*  {
         label: 'File',
